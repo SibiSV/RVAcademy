@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Cricket Academy Joining Form</title>
+    <style>
+     .container {
+            max-width: 80%; /* Full width for smaller screens */
+            width:80%; /* Relative width */
+            margin: 0 auto; /* Center the container */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .form-section {
+            margin-bottom: 10px;
+        }
+
+        .form-section label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form-section input,
+        .form-section select,
+        .form-section textarea {
+            width:
+            80%; /* Full width for responsiveness */
+            max-width: 450px; /* Optional: Max width for larger devices */
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap; /* Ensures options wrap on smaller screens */
+            gap: 10px;
+        }
+
+        button:hover {
+            background-color: #00652B; /* Slightly darker on hover */
+        }
+
+        .declaration {
+            margin-top: 20px;
+        }    
+    </style>
+    <script>
+        function confirmReset() {
+            return confirm("All data will be lost. Are you sure you want to reset the form ?");
+        }
+
+        function confirmHome() {
+            return confirm("All data will be lost. Are you sure you want to go to home tab ?");
+        } 
+         function confirmStat() {
+            return confirm("All data will be lost. Are you sure you want to go to the stats tab ?");
+        } 
+         function confirmAwards() {
+            return confirm("All data will be lost. Are you sure you want to go to the awards tab ?");
+        } 
+         function confirmTeam() {
+            return confirm("All data will be lost. Are you sure you want to go to the team tab ?");
+        } 
+         function confirmAdmission() {
+            return confirm("All data will be lost. Are you sure you want to go to reset the form ?");
+        } 
+        
+    </script>
+    
+    <style>
+             
+           .custom-button {
+    background-color: #02803B;
+    font-family: 'Georgia', serif;
+    color: white;
+    font-size: 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+        .action-button {
+    background-color: #02803B;
+    font-family: 'Georgia';
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.action-button:hover {
+    background-color: #00652B;
+}
+
+
+</style>
+
+       </head>
+      <header style="padding: 20px;background-color: #02803B; color: white;font-family: 'Georgia'; font-size: 15px;"><h1 style="text-align:center;">R.V. CRICKET ACADEMY</h1>
+      <p style="text-align:center;">Building future cricket stars</p>
+</header>
+          <nav style="text-align: center;padding: 20px;background-color: #51B749; color: white;font-family: 'Georgia'; font-size: 15px;">
+              
+  <a href="Main.html">
+  <button type="button" class="custom-button"onclick="if(confirmHome()){href='Main.html';} else{return false;}"> Home
+  </span>
+  </button>
+</a>
+
+
+ <a href="Awards (1).html">
+  <button type="button" class="custom-button"onclick="if(confirmAwards()){href='Awards (1).html';} else{return false;}">
+    </span>Awards
+  </button>
+</a>
+
+
+ <a href="Stats.html">
+  <button type="button" class="custom-button"onclick="if(confirmStat()){href='Stats.html';} else{return false;}">
+    </span>Stats
+  </button>
+</a>
+
+ <a href="team.html">
+  <button type="button"class="custom-button"onclick="if(confirmTeam()){href='team.html';} else{return false;}">
+    </span>Team
+  </button>
+</a>
+
+<a href="form.html">
+ <button type="button"class="custom-button"onclick="if(confirmAdmission()){href='form.html';} else{return false;}">
+    </span>Admission 
+  </button>
+  </a>
+  
+  
+  </nav>
+  <form type="ConfirmSubmission.html" method="post">
+  <h1 style="text-align: center;font-family: 'Georgia';">ADMISSION FORM</h1> <hr size ="7" color="#02803B">
+<container>
+<body bgcolor="white">
+    
+    <div class="container">
+        <h2 style="color: #02803B; font-family:'Georgia'; text-align:left;";> Personal Details</h2>
+
+        <div class="form-section" style ="font-family : 'Georgia'">
+            <label>Your Full Name:</label>
+            <input type="text" maxlength="20" name="full_name" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Gender:</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <label>Address:</label>
+            <textarea name="address" rows="3" required></textarea>
+
+            <label>Contact Number:</label>
+            <input type="tel" name="contact_number" required>
+
+            <label> Emergency Contact Person:</label>
+            <input type="text" name="emergency_contact_person" required>
+
+            <label>Emergency Contact Number:</label>
+            <input type="tel" name="emergency_contact_number" required>
+        </div>
+
+        <div class="form-section" style ="font-family : 'Georgia'" >
+            <h2 style="color: #02803B; text-align:left;"><b>Education</b></h2>
+            <label>Current School/College:</label>
+            <input type="text" name="school_college" required>
+
+            <label>Grade/Class:</label>
+            <input type="text" name="grade_class" required>
+
+        
+        </div>
+
+        <div class="form-section"style ="font-family : 'Georgia'">
+            <h2 style="color: #02803B;">Cricket Background</h2>
+            <label>Have you played cricket before?</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="played_cricket" value="yes" required> Yes</label>
+                <label><input type="radio" name="played_cricket" value="no"> No</label>
+            </div>
+
+         
+            <label>Preferred Role:</label>
+            <select name="preferred_role">
+                <option value="batsman">Batsman</option>
+                <option value="bowler">Bowler</option>
+                <option value="all-rounder">All-rounder</option>
+                <option value="wicketkeeper">Wicketkeeper</option>
+            </select>
+
+            <label>Batting Style:</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="batting_style" value="right-handed"> Right-Handed </label>
+                <label><input type="radio" name="batting_style" value="left-handed"> Left-Handed</label>
+            </div>
+
+            <label>Bowling Style:</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="bowling_style" value="right-arm"> Right-Arm </label>
+                <label><input type="radio" name="bowling_style" value="left-arm"> Left-Arm</label>
+                </div>
+                
+                <label>Bowling Style 2:</label>
+                <div class="checkbox-group">
+                <label><input type="radio" name="bowling_style2" value="fast">Fast</label>
+                <label><input type="radio" name="bowling_style2" value="spin">Spin</label>
+            </div>
+        
+
+        <div class="form-section"style ="font-family : 'Georgia'">
+            <h2 style="color: #02803B; text-align:left;">Medical Information</h2>
+            <label>Do you have any existing medical conditions?</label>
+            <textarea name="medical_conditions" rows="3"></textarea>
+
+            <label>Are you currently on any medication?</label>
+            <textarea name="current_medication" rows="3"></textarea>
+
+            <label>Any allergies we should be aware of?</label>
+            <textarea name="allergies" rows="3"></textarea>
+        </div>
+
+        <div class="form-section" style ="font-family : 'Georgia'">
+            <h2 style="color: #02803B;text-align:left;">Parent/Guardian Details</h2>
+            <label>Parent/Guardian Name:</label>
+            <input type="text" name="guardian_name" required>
+
+            <label>Relationship:</label>
+            <input type="text" name="guardian_relationship" required>
+
+            <label>Contact Number:</label>
+            <input type="tel" name="guardian_contact" required>
+
+            <label>Email ID:</label>
+            <input type="email" name="guardian_email" required>
+        </div>
+
+        <div class="declaration">
+            <p>I hereby declare that the information provided above is true and correct.</p>
+            <label>Signature of Applicant/Parent's signature (if the player is under 18):</label>
+            <input type="file" name="applicant_signature" required>
+            <br><br>
+            <label>Date:</label>
+            <input type="date" name="application_date" required>
+<br><br>
+
+<button type="submit"class="action-button">Submit</button>
+
+<br><br>
+<button type="reset"class="action-button"onclick="if(confirmReset()){reset} else{return false;}"> Reset </button>
+</form>
+     
+          <a href="Main.html">
+  <button type="button"class="action-button" onclick="if(confirmHome()){href='Main.html';} else{return false;}"> HOME
+    </span>
+  </button>
+</a>
+</container>
+</body>
+
+<br><br>
+  <footer style="width: 100%;text-align: center; padding: 20px;border-radius: 8px;background-color: #51B749; color: white;font-family: 'Georgia'; font-size: 15px;">
+        &copy; 2024 R.V. Cricket Academy. All Rights Reserved.
+    </footer>
+</html>
+
